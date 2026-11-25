@@ -24,7 +24,7 @@ void setup() {
   Wire.begin(sdaPin, sclPin);
   
   // Start communication with Arduino Uno
-  unoSerial.begin(9600, SERIAL_8N1, RX_PIN, TX_PIN);
+  unoSerial.begin(9600, SERIAL_8N1, rxPin, txPin);
   
   // Turn on OLED display at address 0x3C
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
